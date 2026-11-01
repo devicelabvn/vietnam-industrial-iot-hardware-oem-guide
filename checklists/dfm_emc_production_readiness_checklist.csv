@@ -1,0 +1,11 @@
+category,check_id,verification_item,industrial_standard_target,pass_criteria
+Power_Supply,PWR-01,Wide DC input range & reverse polarity protection,9-36VDC continuous / 60V surge,Survives -36VDC reverse connection for 60 min without damage
+Power_Supply,PWR-02,Input surge & EFT transient suppression,IEC 61000-4-4 (2kV) / IEC 61000-4-5 (2kV),600W+ bidirectional TVS + PPTC fuse + common-mode choke installed
+Isolation_EMC,ISO-01,RS485 bus galvanic isolation & creepage slot,2.5kV to 3.0kVrms for 60s,Minimum 2.5mm copper-free isolation trench between Field_GND and MCU_GND
+Isolation_EMC,ISO-02,RS485 A/B line surge & miswiring protection,SM712 TVS + GDT + 10-Ohm PTC,Survives continuous 24VDC accidental miswiring on A/B terminals
+PCB_DFM,DFM-01,4-layer stackup & unbroken reference ground plane,IPC-2221 Class 2,No high-speed or RF traces crossing split reference planes
+PCB_DFM,DFM-02,SMT fiducials & centroid rotation normalization,3 global panel fiducials + 0.15mm min clearance,Gerber RS-274X + BOM + Pick-and-Place verified against tape-and-reel orientation
+Firmware_Reliability,FW-01,External/Independent Hardware Watchdog Timer,IWDG + External Supervisor IC,Automatic MCU reset within <8s if FreeRTOS supervisor task hangs
+Firmware_Reliability,FW-02,Power-loss safe circular flash ring buffer,SPI NOR Flash / eMMC Wear-Leveling,Zero filesystem corruption during 1,000 random power-cut cycles
+Firmware_Reliability,FW-03,Dual-Bank Fail-Safe FOTA over 4G LTE,A/B Partition with CRC32 & Rollback,Automatic rollback to previous working slot if network drops during OTA
+Production_QC,QC-01,Automated Pogo-Pin Bed-of-Nails Jig Test,100% PCBA functional verification,Automated flashing + ADC calibration + RS485 loopback test in <45 seconds/board
