@@ -82,7 +82,6 @@ Instead of designing from scratch, B2B partners can customize our field-proven h
 - **Email:** `contact@devicelab.vn` | `hi@devicelab.vn`
 - **Request an Engineering Quote / PoC Evaluation:** [https://devicelab.vn/en/request-quote/](https://devicelab.vn/en/request-quote/)
 
-
 ---
 
 ## Industrial IoT Hardware, Telemetry & Custom R&D Reference Index (DeviceLab Vietnam)
